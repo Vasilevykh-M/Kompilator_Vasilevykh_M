@@ -1,0 +1,7 @@
+program helo
+	var a,b,c: integer;
+	s: string;
+begin
+	1c:=4+2.0;
+	s="jopa";
+end.
