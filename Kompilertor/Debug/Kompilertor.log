@@ -951,7 +951,7 @@
        Переопределение целевого объекта "ComputeMetaGenInputs" в проекте "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.MetaGen.targets" целевым объект "ComputeMetaGenInputs" из проекта "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets".
        Переопределение целевого объекта "GetNativeManifest" в проекте "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" целевым объект "GetNativeManifest" из проекта "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets".
        Переопределение целевого объекта "GetTargetPathWithTargetPlatformMoniker" в проекте "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" целевым объект "GetTargetPathWithTargetPlatformMoniker" из проекта "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.DesignTime.targets".
-Сборка начата 23.10.2021 15:03:43.
+Сборка начата 12.11.2021 15:55:03.
 Уровень детализации журнала: Detailed.     1>Проект "C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\Kompilertor.vcxproj" в узле 2 (целевые объекты Build).
      1>Сборка с инструментами версии "Current".
        Целевой объект "EnableIntermediateOutputPathMismatchWarning" пропущен из-за невыполненного условия; выражение ('$(RestoreProjectStyle)' == 'PackageReference') равно ('' == 'PackageReference').
@@ -975,10 +975,10 @@
      1>Целевой объект "SetTelemetryEnvironmentVariables" в файле "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.DesignTime.targets" из проекта "C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\Kompilertor.vcxproj" (целевой объект "Build" зависит от него):
        Используется задача "SetEnv" из сборки "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Build.CppTasks.Common.dll".
        Задача "SetEnv"
-         VSTEL_SolutionSessionID={583AD2F4-8E72-4EE8-9EBA-7D31A047EEB7}
+         VSTEL_SolutionSessionID={7D33AB31-AF78-4F1B-98BC-8D7AE3A3BE01}
        Выполнение задачи "SetEnv" завершено.
        Задача "SetEnv"
-         VSTEL_CurrentSolutionBuildID=2895850826
+         VSTEL_CurrentSolutionBuildID=331963251
        Выполнение задачи "SetEnv" завершено.
        Задача "SetEnv"
          VSTEL_ProjectID={2be59f50-9072-4ce2-bb16-5a376de02f02}
@@ -1276,28 +1276,27 @@
          	Debug\Kompilertor.tlog\CL.read.1.tlog
          Выходные данные для C:\USERS\МИХАИЛ\DESKTOP\КОМПИЛЯТОР\KOMPILERTOR\KOMPILERTOR\MAIN.CPP:
          	C:\USERS\МИХАИЛ\DESKTOP\КОМПИЛЯТОР\KOMPILERTOR\KOMPILERTOR\DEBUG\MAIN.OBJ
-         Будет выполнена компиляция исходного кода "main.cpp", так как C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\main.cpp изменено в 23.10.2021 15:03:43.
+         Будет выполнена компиляция исходного кода "main.cpp", так как C:\USERS\Михаил\DESKTOP\Компилятор\KOMPILERTOR\KOMPILERTOR\CIO_LEKS.H изменено в 12.11.2021 15:55:03.
          Выходные данные для C:\USERS\МИХАИЛ\DESKTOP\КОМПИЛЯТОР\KOMPILERTOR\KOMPILERTOR\MAIN.CPP:
          	C:\USERS\МИХАИЛ\DESKTOP\КОМПИЛЯТОР\KOMPILERTOR\KOMPILERTOR\DEBUG\MAIN.OBJ
          Журналы отслеживания записи:
          	Debug\Kompilertor.tlog\CL.write.1.tlog
          Переменные окружения переданы инструменту:
-           VS_UNICODE_OUTPUT=1892
+           VS_UNICODE_OUTPUT=2448
          C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /external:W3 /Gd /TP /analyze- /FC /errorReport:prompt main.cpp
          Команда отслеживания:
-         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i "C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\Debug\Kompilertor.tlog" /r "C:\USERS\МИХАИЛ\DESKTOP\КОМПИЛЯТОР\KOMPILERTOR\KOMPILERTOR\MAIN.CPP" /b MSBuildConsole_CancelEvent99a361a3d5314184a8405c0e9fcddf25  /c "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\CL.exe"  /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /external:W3 /Gd /TP /analyze- /FC /errorReport:prompt main.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i "C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\Debug\Kompilertor.tlog" /r "C:\USERS\МИХАИЛ\DESKTOP\КОМПИЛЯТОР\KOMPILERTOR\KOMPILERTOR\MAIN.CPP" /b MSBuildConsole_CancelEvent73b2b55f25744494a037dc29f655557d  /c "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\CL.exe"  /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /external:W3 /Gd /TP /analyze- /FC /errorReport:prompt main.cpp
          main.cpp
-         The contents of <variant> are available only with C++17 or later.
-     1>C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\main.cpp(209,20): warning C4018: <: несоответствие типов со знаком и без знака
-     1>C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\main.cpp(229,20): warning C4018: <: несоответствие типов со знаком и без знака
-     1>C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\main.cpp(253,28): warning C4018: <: несоответствие типов со знаком и без знака
-     1>C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\main.cpp(267,28): warning C4018: <: несоответствие типов со знаком и без знака
-     1>C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\main.cpp(275,11): warning C4018: <: несоответствие типов со знаком и без знака
-     1>C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\main.cpp(305,20): warning C4018: <: несоответствие типов со знаком и без знака
-     1>C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\main.cpp(404,16): warning C4129: .: неизвестная escape-последовательность
-     1>C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\main.cpp(442,9): warning C4553: "==": результат выражения не используется; вы хотели использовать "="?
-     1>C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\main.cpp(549,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
-     1>C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\main.cpp(552,12): warning C4101: tt: неиспользованная локальная переменная
+     1>C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\CIO_LEKS.h(62,28): warning C4018: <: несоответствие типов со знаком и без знака
+     1>C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\CIO_LEKS.h(76,28): warning C4018: <: несоответствие типов со знаком и без знака
+     1>C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\CIO_LEKS.h(84,11): warning C4018: <: несоответствие типов со знаком и без знака
+     1>C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\CIO_LEKS.h(114,20): warning C4018: <: несоответствие типов со знаком и без знака
+     1>C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\CIO_LEKS.h(155,20): warning C4018: <: несоответствие типов со знаком и без знака
+     1>C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\CIO_LEKS.h(250,22): warning C4018: <: несоответствие типов со знаком и без знака
+     1>C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\CIO_LEKS.h(274,16): warning C4129: .: неизвестная escape-последовательность
+     1>C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\CIO_LEKS.h(312,9): warning C4553: "==": результат выражения не используется; вы хотели использовать "="?
+     1>C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\main.cpp(12,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+     1>C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\main.cpp(15,12): warning C4101: tt: неиспользованная локальная переменная
        Выполнение задачи "CL" завершено.
      1>Сборка целевого объекта "ClCompile" в проекте "Kompilertor.vcxproj" завершена.
        Целевой объект "RunSelectedFileNativeCodeAnalysis" пропущен из-за невыполненного условия; выражение ('$(RunMsvcAnalysis)'=='true' and '$(SelectedFiles)'!='') равно ('false'=='true' and ''!='').
@@ -1440,12 +1439,12 @@
          	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\LIB\X86\OLDNAMES.LIB
          	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\LIB\X86\VCRUNTIMED.LIB
          	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.19041.0\UCRT\X86\UCRTD.LIB
-         Требуется компиляция исходного кода: входные данные C:\USERS\Михаил\DESKTOP\Компилятор\KOMPILERTOR\KOMPILERTOR\DEBUG\MAIN.OBJ обновились по сравнению с выходными C:\USERS\Михаил\DESKTOP\Компилятор\KOMPILERTOR\DEBUG\KOMPILERTOR.EXE.
+         Требуется компиляция исходного кода: входные данные C:\USERS\Михаил\DESKTOP\Компилятор\KOMPILERTOR\KOMPILERTOR\DEBUG\MAIN.OBJ обновились по сравнению с выходными C:\USERS\МИХАИЛ\DESKTOP\КОМПИЛЯТОР\KOMPILERTOR\DEBUG\KOMPILERTOR.PDB.
          Переменные окружения переданы инструменту:
-           VS_UNICODE_OUTPUT=1444
+           VS_UNICODE_OUTPUT=1672
          C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Debug\Kompilertor.exe" /INCREMENTAL /ILK:"Debug\Kompilertor.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Debug\Kompilertor.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Debug\Kompilertor.lib" /MACHINE:X86 Debug\main.obj
          Команда отслеживания:
-         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i "C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\Debug\Kompilertor.tlog" /r "C:\USERS\МИХАИЛ\DESKTOP\КОМПИЛЯТОР\KOMPILERTOR\KOMPILERTOR\DEBUG\MAIN.OBJ" /b MSBuildConsole_CancelEventdb663d4c0da347e3a805448ef584a489  /c "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\link.exe"  /ERRORREPORT:PROMPT /OUT:"C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Debug\Kompilertor.exe" /INCREMENTAL /ILK:"Debug\Kompilertor.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Debug\Kompilertor.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Debug\Kompilertor.lib" /MACHINE:X86 Debug\main.obj
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i "C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\Debug\Kompilertor.tlog" /r "C:\USERS\МИХАИЛ\DESKTOP\КОМПИЛЯТОР\KOMPILERTOR\KOMPILERTOR\DEBUG\MAIN.OBJ" /b MSBuildConsole_CancelEvent7d32624ed52e499cb2ade351e199f41c  /c "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\link.exe"  /ERRORREPORT:PROMPT /OUT:"C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Debug\Kompilertor.exe" /INCREMENTAL /ILK:"Debug\Kompilertor.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Debug\Kompilertor.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Debug\Kompilertor.lib" /MACHINE:X86 Debug\main.obj
        Выполнение задачи "Link" завершено.
        Задача "Message"
          Kompilertor.vcxproj -> C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Debug\Kompilertor.exe
@@ -1670,18 +1669,18 @@
 
        "C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\Kompilertor.vcxproj" (целевой объект Build ) (1) ->
        (Целевой объект ClCompile) -> 
-         C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\main.cpp(209,20): warning C4018: <: несоответствие типов со знаком и без знака
-         C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\main.cpp(229,20): warning C4018: <: несоответствие типов со знаком и без знака
-         C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\main.cpp(253,28): warning C4018: <: несоответствие типов со знаком и без знака
-         C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\main.cpp(267,28): warning C4018: <: несоответствие типов со знаком и без знака
-         C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\main.cpp(275,11): warning C4018: <: несоответствие типов со знаком и без знака
-         C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\main.cpp(305,20): warning C4018: <: несоответствие типов со знаком и без знака
-         C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\main.cpp(404,16): warning C4129: .: неизвестная escape-последовательность
-         C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\main.cpp(442,9): warning C4553: "==": результат выражения не используется; вы хотели использовать "="?
-         C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\main.cpp(549,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
-         C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\main.cpp(552,12): warning C4101: tt: неиспользованная локальная переменная
+         C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\CIO_LEKS.h(62,28): warning C4018: <: несоответствие типов со знаком и без знака
+         C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\CIO_LEKS.h(76,28): warning C4018: <: несоответствие типов со знаком и без знака
+         C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\CIO_LEKS.h(84,11): warning C4018: <: несоответствие типов со знаком и без знака
+         C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\CIO_LEKS.h(114,20): warning C4018: <: несоответствие типов со знаком и без знака
+         C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\CIO_LEKS.h(155,20): warning C4018: <: несоответствие типов со знаком и без знака
+         C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\CIO_LEKS.h(250,22): warning C4018: <: несоответствие типов со знаком и без знака
+         C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\CIO_LEKS.h(274,16): warning C4129: .: неизвестная escape-последовательность
+         C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\CIO_LEKS.h(312,9): warning C4553: "==": результат выражения не используется; вы хотели использовать "="?
+         C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\main.cpp(12,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+         C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\main.cpp(15,12): warning C4101: tt: неиспользованная локальная переменная
 
     Предупреждений: 10
     Ошибок: 0
 
-Прошло времени 00:00:01.74
+Прошло времени 00:00:02.17
