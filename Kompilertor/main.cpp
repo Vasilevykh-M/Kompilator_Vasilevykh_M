@@ -3,6 +3,7 @@
 #include<string>
 #include"CIO_LEKS.h"
 #include"Resorse_comp.h"
+#include"CEXPR.h"
 
 using namespace std;
 
@@ -19,12 +20,15 @@ void main()
 	char leks='\0';
 	CToken* A;
 
-	do
+	/*do
 	{
 		A = IO(buf, lt, leks, r, i,j);
 		if(A!=NULL)
 			cout << A->ident << " " << A->tt << endl;
-	} while (A != NULL);
+	} while (A != NULL);*/
+
+	EXPR *a = new EXPR();
+	cout<<a->PROGRAM();
 
 	/*for (auto egge : eror)
 	{

@@ -2,9 +2,6 @@
 #include<string>
 #include"Resorse_comp.h"
 
-//std::string letters = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM_";
-//std::string numbers = "0123456789";
-//enum TokenType { ttIdent, ttOperation, ttConst };
 class CToken
 {
 public:
@@ -383,10 +380,12 @@ Again:
 	{
 		token = ttOperation;
 		buf += leks;
+
 		if (!READ(fl, leks)) {
 			leks = '\0';
 			break;
 		}
+
 
 		if (leks == '\t')
 			i += 4;
@@ -395,6 +394,9 @@ Again:
 
 		if (leks == '\n')
 			j++;
+
+		if (leks != ':' || leks != '=' || leks != '>' || leks != '<')
+			break;
 
 	}
 
