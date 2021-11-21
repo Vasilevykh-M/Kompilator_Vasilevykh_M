@@ -32,7 +32,7 @@ public:
 				{
 					GetNextToken();
 					if (BLOC()) {
-						GetNextToken();
+						//GetNextToken();
 						if (curToken->ident == ".")
 						{
 							return true;
@@ -46,7 +46,10 @@ public:
 
 	bool BLOC()
 	{
-		return CONST_AREA() && VAR_AREA();
+		bool a = CONST_AREA();
+		bool b = VAR_AREA();
+		bool c = OPERATOR_AREA();
+		return a && b && c;
 	}
 
 
@@ -69,7 +72,16 @@ public:
 						}
 						GetNextToken();
 					}
+					GetNextToken();
 				}
+				else
+				{
+					return false;
+				}
+			}
+			else
+			{
+				return false;
 			}
 		}
 		return true;
@@ -146,6 +158,7 @@ public:
 				GetNextToken();
 				if (curToken->ident == ";")
 				{
+					GetNextToken();
 					while (VAR())
 					{
 						GetNextToken();
@@ -154,6 +167,7 @@ public:
 							return false;
 						}
 					}
+					GetNextToken();
 				}
 				else
 				{
@@ -181,6 +195,7 @@ public:
 					GetNextToken();
 					if (curToken->ident != ",")
 						break;
+					GetNextToken();
 				}
 			}
 
@@ -196,85 +211,86 @@ public:
 		return false;
 	}
 
-	bool OPERATOR_AREA()
+	bool OPERATOR_AREA() // раздел операторов		*
 	{
-		return OPERATOR();
+		return OPERATOR();//		*
 	}
 
-	bool OPERATOR()
+	bool OPERATOR() // <оператор>::=<простой оператор>|<сложный оператор>
 	{
-		if (SIMPLE_OPERATOR() || DIF_OPERATOR())
+		if (DIF_OPERATOR() || SIMPLE_OPERATOR()) // простой оператор | сложный оператор		*		*
 		{
 			return true;
 		}
 		return false;
 	}
 
-	bool SIMPLE_OPERATOR()
+	bool SIMPLE_OPERATOR() // < простой оператор > :: = <оператор присваивания> | <пустой оператор>
 	{
-		if (ASSIGMENT_OPERATOR() || curToken == NULL)
+		if (ASSIGMENT_OPERATOR())//		*
 		{
 			return true;
 		}
-		return false;
+		return true; //?
 	}
 
-	bool ASSIGMENT_OPERATOR()
+	bool ASSIGMENT_OPERATOR() // < оператор присваивания > :: = <имя> := < выражение >		*
 	{
-		if (curToken->tt == ttIdent)
+		if (curToken->tt == ttIdent) // по идее мы можем цепануть и тип
 		{
 			GetNextToken();
-			if (curToken->ident == ":=")
+			if (curToken->ident == ":=") // :=
 			{
 				GetNextToken();
-				if (EXPRESSION())
+				if (EXPRESSION()) // выражение		*
 				{
-					return true;
+					return true; // всё тип топ это присванивание
 				}
 			}
 		}
-		return false;
+		return false; //если не прошли во внутрь значит точно не это
 	}
 
-	bool EXPRESSION()
+	bool EXPRESSION() // <выражение>::=<простое выражение>|<простое выражение><операция отношения><простое выражение>		*
 	{
-		if (SIMPLE_EXPESSION())
+		if (SIMPLE_EXPESSION()) // простое выражение		*
 		{
-			GetNextToken();
-			if (RELAT_EXPRESSION())
+			if (RELAT_EXPRESSION()) // операция отношения		*
 			{
 				GetNextToken();
-				if (SIMPLE_EXPESSION())
+				if (SIMPLE_EXPESSION())// простое выражение			*
+				{
 					return true;
-				return false;
+				}
+				return false; // если не попали в операцию
 			}
-			return true;
+			return true; // если пришли сюда то первая ветка
 		}
 		return false;
 	}
 
-	bool SIMPLE_EXPESSION()
+	bool SIMPLE_EXPESSION() // <простое выражение>::=<знак><слагаемое>{<аддитивная операция><слагаемое>}	*
 	{
 		if (curToken->ident == "-")
 		{
 			GetNextToken();
 		}
 
-		if (TERM())
+		if (TERM())//	*
 		{
-			GetNextToken();
-			while (ADD_EXPRESSION())
+			//GetNextToken();
+			while (ADD_EXPRESSION())//		*
 			{
 				GetNextToken();
-				if (!TERM())
+				if (!TERM())//		*
 					return false;
-				GetNextToken();
+				//GetNextToken();
 			}
 		}
 		return true;
 	}
 
-	bool RELAT_EXPRESSION()
+	bool RELAT_EXPRESSION() // <операция отношения>::==|<>|<|<=|>=|>|in		*
 	{
 		if (curToken->ident == "=" || curToken->ident == "<>" || curToken->ident == "<" || curToken->ident == ">" || curToken->ident == "<=" ||
 			curToken->ident == ">=" || curToken->ident == "in") // переделаю в switch
@@ -284,7 +300,7 @@ public:
 		return false;
 	}
 
-	bool ADD_EXPRESSION()
+	bool ADD_EXPRESSION() // <аддитивная операция>::=+|-|or		*
 	{
 		if (curToken->ident == "+" || curToken->ident == "-" || curToken->ident == "or")
 		{
@@ -293,7 +309,7 @@ public:
 		return false;
 	}
 
-	bool MULT_EXPRESSION()
+	bool MULT_EXPRESSION() // <мультипликативная операция>::=*|/|div|mod|and	*
 	{
 		if (curToken->ident == "*" || curToken->ident == "/" || curToken->ident == "div" || curToken->ident == "mod" || curToken->ident == "and")
 		{
@@ -302,11 +318,11 @@ public:
 		return false;
 	}
 
-	bool TERM()
+	bool TERM() // <слагаемое>::=<множитель>{<мультипликативная операция><множитель>}	 *
 	{
 		if (FACTOR())
 		{
-			GetNextToken();
+			//GetNextToken();
 			while (MULT_EXPRESSION())
 			{
 				GetNextToken();
@@ -314,18 +330,22 @@ public:
 					return false;
 				GetNextToken();
 			}
+			return true;
 		}
+		return false;
 	}
 
-	bool FACTOR()
+	bool FACTOR() // <множитель>::=<имя>|<константа без знака>|(<выражение>)	*
 	{
 		if (curToken->tt == ttIdent)
 		{
+			GetNextToken();
 			return true;
 		}
 
 		if (NUM_NOT_SIGN())
 		{
+			GetNextToken();
 			return true;
 		}
 
@@ -333,53 +353,60 @@ public:
 		{
 			return true;
 		}
-	}
-
-	bool DIF_OPERATOR()
-	{
-		if (COMPOSITE_OPERATOR() || CHOICE_OPERATOR() || CYCLE_OPERATOR())
-		{
-			return true;
-		}
+		GetNextToken();
 		return false;
 	}
 
-	bool COMPOSITE_OPERATOR()
+	bool DIF_OPERATOR() // <сложный оператор>::=<составной оператор>|<выбирающий оператор>|<оператор цикла>		*
+	{
+		// такой странный вид реализован что бы лишний раз не проверять условие
+		if (COMPOSITE_OPERATOR()) //		*
+			return true;
+		if (CHOICE_OPERATOR())//		*
+			return true;
+		if (CYCLE_OPERATOR())//		*
+			return true;
+		return false;
+	}
+
+	bool COMPOSITE_OPERATOR() // <составной оператор>::= begin <оператор>{;<оператор>} end 		*
 	{
 		if (curToken->ident == "begin")
 		{
 			GetNextToken();
-			if (!OPERATOR())
+			if (!OPERATOR())//		*
 				return false;
-			GetNextToken();
 			while (curToken->ident == ";")
 			{
 				GetNextToken();
-				if (!OPERATOR())
-					return false;
-				GetNextToken();
+				if (!OPERATOR()) //		*
+					break;
 			}
 
-			if(curToken->ident == "end")
+			if (curToken->ident == "end") {
+				GetNextToken();
 				return true;
+			}
+			else
+			{
+				GetNextToken();
+			}
 		}
 		return false;
 	}
 
-	bool CHOICE_OPERATOR()
+	bool CHOICE_OPERATOR() // <выбирающий оператор>::= if <выражение> then <оператор>|if <выражение> then <оператор> else <оператор>	*
 	{
 		if (curToken->ident == "if")
 		{
 			GetNextToken();
-			if (EXPRESSION())
+			if (EXPRESSION()) //	*
 			{
-				GetNextToken();
 				if (curToken->ident == "then")
 				{
 					GetNextToken();
-					if (OPERATOR())
+					if (OPERATOR())//		*
 					{
-						GetNextToken();
 						if (curToken->ident == "else")
 						{
 							GetNextToken();
@@ -394,14 +421,13 @@ public:
 		return false;
 	}
 
-	bool CYCLE_OPERATOR()
+	bool CYCLE_OPERATOR() // <оператор цикла>::= while <выражение> do <оператор>
 	{
 		if (curToken->ident == "while")
 		{
 			GetNextToken();
 			if (EXPRESSION())
 			{
-				GetNextToken();
 				if (curToken->ident == "do")
 				{
 					GetNextToken();

@@ -131,8 +131,9 @@ bool READ(std::ifstream& fl, char& leks)
 
 std::string ToString(char leks)
 {
-	std::string str = "";
-	return str + leks;
+	std::string str;
+	str.push_back(leks);
+	return str;
 }
 
 bool num(char leks)
@@ -375,30 +376,67 @@ Again:
 		return new CToken(ttIdent, buf);
 	}
 
-
-	while (SpecToken.find(ToString(leks)) != SpecToken.end() && leks != '\t' && leks != '\0' && leks != '\n' && leks != '\'')
+	if (leks == ':')
 	{
 		token = ttOperation;
 		buf += leks;
-
 		if (!READ(fl, leks)) {
 			leks = '\0';
-			break;
+		}
+		else
+		{
+			if (leks == '=')
+			{
+				buf += leks;
+				leks = '\0';
+			}
+		}
+	}
+
+
+	if (leks == '>')
+	{
+		token = ttOperation;
+		buf += leks;
+		if (!READ(fl, leks)) {
+			leks = '\0';
+		}
+		else
+		{
+			if (leks == '=' )
+			{
+				buf += leks;
+				leks = '\0';
+			}
 		}
 
+	}
 
-		if (leks == '\t')
-			i += 4;
+	if (leks == '<')
+	{
+		token = ttOperation;
+		buf += leks;
+		if (!READ(fl, leks)) {
+			leks = '\0';
+		}
 		else
-			i++;
-
-		if (leks == '\n')
-			j++;
-
-		if (leks != ':' || leks != '=' || leks != '>' || leks != '<')
-			break;
+		{
+			if (leks == '=' || leks == '>')
+			{
+				buf += leks;
+				leks = '\0';
+			}
+		}
 
 	}
+
+	if (SpecToken.find(ToString(leks)) != SpecToken.end() && buf == "")
+	{
+		token = ttOperation;
+		buf += leks;
+		leks = '\0';
+	}
+
 
 	if (buf != "")
 	{

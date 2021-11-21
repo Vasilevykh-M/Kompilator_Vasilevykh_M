@@ -951,7 +951,7 @@
        Переопределение целевого объекта "ComputeMetaGenInputs" в проекте "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.MetaGen.targets" целевым объект "ComputeMetaGenInputs" из проекта "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets".
        Переопределение целевого объекта "GetNativeManifest" в проекте "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" целевым объект "GetNativeManifest" из проекта "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets".
        Переопределение целевого объекта "GetTargetPathWithTargetPlatformMoniker" в проекте "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" целевым объект "GetTargetPathWithTargetPlatformMoniker" из проекта "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.DesignTime.targets".
-Сборка начата 18.11.2021 16:01:08.
+Сборка начата 21.11.2021 13:01:55.
 Уровень детализации журнала: Detailed.     1>Проект "C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\Kompilertor.vcxproj" в узле 2 (целевые объекты Build).
      1>Сборка с инструментами версии "Current".
        Целевой объект "EnableIntermediateOutputPathMismatchWarning" пропущен из-за невыполненного условия; выражение ('$(RestoreProjectStyle)' == 'PackageReference') равно ('' == 'PackageReference').
@@ -975,10 +975,10 @@
      1>Целевой объект "SetTelemetryEnvironmentVariables" в файле "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.DesignTime.targets" из проекта "C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\Kompilertor.vcxproj" (целевой объект "Build" зависит от него):
        Используется задача "SetEnv" из сборки "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Build.CppTasks.Common.dll".
        Задача "SetEnv"
-         VSTEL_SolutionSessionID={82FE7C61-3FBA-4115-90C3-1732FC74C557}
+         VSTEL_SolutionSessionID={2689AE4D-AFBE-4584-A258-3DB4ECB92077}
        Выполнение задачи "SetEnv" завершено.
        Задача "SetEnv"
-         VSTEL_CurrentSolutionBuildID=850728159
+         VSTEL_CurrentSolutionBuildID=1099173973
        Выполнение задачи "SetEnv" завершено.
        Задача "SetEnv"
          VSTEL_ProjectID={2be59f50-9072-4ce2-bb16-5a376de02f02}
@@ -1041,7 +1041,7 @@
      1>Сборка целевого объекта "AddExternalIncludDirectoriesToPaths" в проекте "Kompilertor.vcxproj" завершена.
      1>Целевой объект "SetBuildDefaultEnvironmentVariables" в файле "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.Current.targets" из проекта "C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\Kompilertor.vcxproj" (целевой объект "PrepareForBuild" зависит от него):
        Задача "SetEnv"
-         PATH=C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86;C:\Program Files (x86)\Windows Kits\10\bin\10.0.19041.0\x86;;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\tools;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\;;C:\Program Files\Haskell\bin;C:\Program Files\Haskell Platform\8.6.5\lib\extralibs\bin;C:\Program Files\Haskell Platform\8.6.5\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\ProgramData\chocolatey\bin;C:\Program Files\Haskell Platform\8.6.5\mingw\bin;C:\Program Files\Go\bin;C:\Program Files (x86)\Common Files\Acronis\VirtualFile\;C:\Program Files (x86)\Common Files\Acronis\VirtualFile64\;C:\Program Files (x86)\Common Files\Acronis\SnapAPI\;C:\Users\Михаил\AppData\Roaming\cabal\bin;C:\Users\Михаил\AppData\Roaming\local\bin;C:\Users\Михаил\AppData\Local\Microsoft\WindowsApps;C:\ProgramData\chocolatey\lib\ghc\tools\ghc-8.10.3\bin;C:\tools\msys64;C:\Users\Михаил\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Михаил\go\bin;C:\Program Files\JetBrains\DataGrip 2021.2.2\bin;;C:\Users\Михаил\.dotnet\tools;C:\Users\Михаил\AppData\Local\GitHubDesktop\bin;
+         PATH=C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86;C:\Program Files (x86)\Windows Kits\10\bin\10.0.19041.0\x86;;C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\tools;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin;C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\;;C:\Program Files\Haskell\bin;C:\Program Files\Haskell Platform\8.6.5\lib\extralibs\bin;C:\Program Files\Haskell Platform\8.6.5\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\ProgramData\chocolatey\bin;C:\Program Files\Haskell Platform\8.6.5\mingw\bin;C:\Program Files\Go\bin;C:\Program Files (x86)\Common Files\Acronis\VirtualFile\;C:\Program Files (x86)\Common Files\Acronis\VirtualFile64\;C:\Program Files (x86)\Common Files\Acronis\SnapAPI\;C:\Users\Михаил\AppData\Roaming\cabal\bin;C:\Users\Михаил\AppData\Roaming\local\bin;C:\Users\Михаил\AppData\Local\Microsoft\WindowsApps;C:\ProgramData\chocolatey\lib\ghc\tools\ghc-8.10.3\bin;C:\tools\msys64;C:\Users\Михаил\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Михаил\go\bin;C:\Program Files\JetBrains\DataGrip 2021.2.2\bin;;C:\Users\Михаил\.dotnet\tools;C:\Users\Михаил\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\GoLand 2021.2.4\bin;;C:\Program Files\JetBrains\PyCharm Community Edition 2021.2.3\bin;;
        Выполнение задачи "SetEnv" завершено.
        Задача "SetEnv"
          LIB=C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\lib\x86;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\atlmfc\lib\x86;;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\lib\x86;;C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\ucrt\x86;;;C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\um\x86;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\lib\um\x86;
@@ -1276,29 +1276,7 @@
          	Debug\Kompilertor.tlog\CL.read.1.tlog
          Выходные данные для C:\USERS\МИХАИЛ\DESKTOP\КОМПИЛЯТОР\KOMPILERTOR\KOMPILERTOR\MAIN.CPP:
          	C:\USERS\МИХАИЛ\DESKTOP\КОМПИЛЯТОР\KOMPILERTOR\KOMPILERTOR\DEBUG\MAIN.OBJ
-         Будет выполнена компиляция исходного кода "main.cpp", так как C:\USERS\Михаил\DESKTOP\Компилятор\KOMPILERTOR\KOMPILERTOR\CEXPR.H изменено в 18.11.2021 16:01:07.
-         Выходные данные для C:\USERS\МИХАИЛ\DESKTOP\КОМПИЛЯТОР\KOMPILERTOR\KOMPILERTOR\MAIN.CPP:
-         	C:\USERS\МИХАИЛ\DESKTOP\КОМПИЛЯТОР\KOMPILERTOR\KOMPILERTOR\DEBUG\MAIN.OBJ
-         Журналы отслеживания записи:
-         	Debug\Kompilertor.tlog\CL.write.1.tlog
-         Переменные окружения переданы инструменту:
-           VS_UNICODE_OUTPUT=2032
-         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /external:W3 /Gd /TP /analyze- /FC /errorReport:prompt main.cpp
-         Команда отслеживания:
-         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i "C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\Debug\Kompilertor.tlog" /r "C:\USERS\МИХАИЛ\DESKTOP\КОМПИЛЯТОР\KOMPILERTOR\KOMPILERTOR\MAIN.CPP" /b MSBuildConsole_CancelEventb928fb0f82e94b7abdc32962d61102e5  /c "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\CL.exe"  /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /external:W3 /Gd /TP /analyze- /FC /errorReport:prompt main.cpp
-         main.cpp
-     1>C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\CIO_LEKS.h(59,28): warning C4018: <: несоответствие типов со знаком и без знака
-     1>C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\CIO_LEKS.h(73,28): warning C4018: <: несоответствие типов со знаком и без знака
-     1>C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\CIO_LEKS.h(81,11): warning C4018: <: несоответствие типов со знаком и без знака
-     1>C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\CIO_LEKS.h(111,20): warning C4018: <: несоответствие типов со знаком и без знака
-     1>C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\CIO_LEKS.h(152,20): warning C4018: <: несоответствие типов со знаком и без знака
-     1>C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\CIO_LEKS.h(247,22): warning C4018: <: несоответствие типов со знаком и без знака
-     1>C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\CIO_LEKS.h(271,16): warning C4129: .: неизвестная escape-последовательность
-     1>C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\CIO_LEKS.h(309,9): warning C4553: "==": результат выражения не используется; вы хотели использовать "="?
-     1>C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\main.cpp(13,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
-     1>C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\main.cpp(16,12): warning C4101: tt: неиспользованная локальная переменная
-     1>C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\main.cpp(21,10): warning C4101: A: неиспользованная локальная переменная
-     1>C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\CEXPR.h(137): warning C4715: EXPR::NUM_NOT_SIGN: значение возвращается не при всех путях выполнения
+         Для всех выходных данных обновления не требуется.
        Выполнение задачи "CL" завершено.
      1>Сборка целевого объекта "ClCompile" в проекте "Kompilertor.vcxproj" завершена.
        Целевой объект "RunSelectedFileNativeCodeAnalysis" пропущен из-за невыполненного условия; выражение ('$(RunMsvcAnalysis)'=='true' and '$(SelectedFiles)'!='') равно ('false'=='true' and ''!='').
@@ -1443,12 +1421,13 @@
          	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.19041.0\UCRT\X86\UCRTD.LIB
          	C:\PROGRAM FILES (X86)\COMMON FILES\CRYPTO PRO\APPCOMPAT\CPADVAI.DLL
          	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\BIN\HOSTX86\X86\CVTRES.EXE
+         	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.29.30133\BIN\HOSTX86\X86\VCTIP.EXE
          Требуется компиляция исходного кода: входные данные C:\USERS\Михаил\DESKTOP\Компилятор\KOMPILERTOR\KOMPILERTOR\DEBUG\MAIN.OBJ обновились по сравнению с выходными C:\USERS\Михаил\DESKTOP\Компилятор\KOMPILERTOR\DEBUG\KOMPILERTOR.EXE.
          Переменные окружения переданы инструменту:
-           VS_UNICODE_OUTPUT=1852
+           VS_UNICODE_OUTPUT=1780
          C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Debug\Kompilertor.exe" /INCREMENTAL /ILK:"Debug\Kompilertor.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Debug\Kompilertor.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Debug\Kompilertor.lib" /MACHINE:X86 Debug\main.obj
          Команда отслеживания:
-         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i "C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\Debug\Kompilertor.tlog" /r "C:\USERS\МИХАИЛ\DESKTOP\КОМПИЛЯТОР\KOMPILERTOR\KOMPILERTOR\DEBUG\MAIN.OBJ" /b MSBuildConsole_CancelEvent5fd06a02badb4377a777c30a47f4e839  /c "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\link.exe"  /ERRORREPORT:PROMPT /OUT:"C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Debug\Kompilertor.exe" /INCREMENTAL /ILK:"Debug\Kompilertor.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Debug\Kompilertor.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Debug\Kompilertor.lib" /MACHINE:X86 Debug\main.obj
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i "C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\Debug\Kompilertor.tlog" /r "C:\USERS\МИХАИЛ\DESKTOP\КОМПИЛЯТОР\KOMPILERTOR\KOMPILERTOR\DEBUG\MAIN.OBJ" /b MSBuildConsole_CancelEvent9bb2cbf4213c467ebe28b6e16b470063  /c "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\link.exe"  /ERRORREPORT:PROMPT /OUT:"C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Debug\Kompilertor.exe" /INCREMENTAL /ILK:"Debug\Kompilertor.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Debug\Kompilertor.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Debug\Kompilertor.lib" /MACHINE:X86 Debug\main.obj
        Выполнение задачи "Link" завершено.
        Задача "Message"
          Kompilertor.vcxproj -> C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Debug\Kompilertor.exe
@@ -1670,23 +1649,7 @@
      1>Сборка проекта "C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\Kompilertor.vcxproj" завершена (целевые объекты Build).
 
 Сборка успешно завершена.
-
-       "C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\Kompilertor.vcxproj" (целевой объект Build ) (1) ->
-       (Целевой объект ClCompile) -> 
-         C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\CIO_LEKS.h(59,28): warning C4018: <: несоответствие типов со знаком и без знака
-         C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\CIO_LEKS.h(73,28): warning C4018: <: несоответствие типов со знаком и без знака
-         C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\CIO_LEKS.h(81,11): warning C4018: <: несоответствие типов со знаком и без знака
-         C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\CIO_LEKS.h(111,20): warning C4018: <: несоответствие типов со знаком и без знака
-         C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\CIO_LEKS.h(152,20): warning C4018: <: несоответствие типов со знаком и без знака
-         C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\CIO_LEKS.h(247,22): warning C4018: <: несоответствие типов со знаком и без знака
-         C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\CIO_LEKS.h(271,16): warning C4129: .: неизвестная escape-последовательность
-         C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\CIO_LEKS.h(309,9): warning C4553: "==": результат выражения не используется; вы хотели использовать "="?
-         C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\main.cpp(13,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
-         C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\main.cpp(16,12): warning C4101: tt: неиспользованная локальная переменная
-         C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\main.cpp(21,10): warning C4101: A: неиспользованная локальная переменная
-         C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilertor\CEXPR.h(137): warning C4715: EXPR::NUM_NOT_SIGN: значение возвращается не при всех путях выполнения
-
-    Предупреждений: 12
+    Предупреждений: 0
     Ошибок: 0
 
-Прошло времени 00:00:01.36
+Прошло времени 00:00:00.74
