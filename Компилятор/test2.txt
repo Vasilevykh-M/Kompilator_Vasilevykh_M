@@ -1,0 +1,5 @@
+program helo;
+	var A, B ,c: integer;
+begin
+A:=2 + B;
+end.

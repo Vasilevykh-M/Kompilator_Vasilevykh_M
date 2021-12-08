@@ -1,0 +1,12 @@
+program helo;
+	var a,b,c: integer;
+	s: string;
+begin
+A:=2 + B;
+if a > b then a:=v+c;
+while n > 0 do begin
+if a > b then a:=v+cs;
+c:=c+1;
+n:=n+1;
+end;
+end.
