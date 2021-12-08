@@ -1,7 +1,0 @@
-program helo;
-	var a,b,c: integer;
-	s: string;
-begin
-A:=2 + B;
-if a > b then a:=v+c;
-end.
