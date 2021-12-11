@@ -12,3 +12,17 @@ C:\Users\Михаил\Desktop\Компилятор\Компилятор\Комп
 C:\Users\Михаил\Desktop\Компилятор\Компилятор\Компилятор\obj\Debug\netcoreapp3.1\Компилятор.dll
 C:\Users\Михаил\Desktop\Компилятор\Компилятор\Компилятор\obj\Debug\netcoreapp3.1\Компилятор.pdb
 C:\Users\Михаил\Desktop\Компилятор\Компилятор\Компилятор\obj\Debug\netcoreapp3.1\Компилятор.genruntimeconfig.cache
+C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilator_Vasilevykh_M\Компилятор\bin\Debug\netcoreapp3.1\Компилятор.exe
+C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilator_Vasilevykh_M\Компилятор\bin\Debug\netcoreapp3.1\Компилятор.deps.json
+C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilator_Vasilevykh_M\Компилятор\bin\Debug\netcoreapp3.1\Компилятор.runtimeconfig.json
+C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilator_Vasilevykh_M\Компилятор\bin\Debug\netcoreapp3.1\Компилятор.runtimeconfig.dev.json
+C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilator_Vasilevykh_M\Компилятор\bin\Debug\netcoreapp3.1\Компилятор.dll
+C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilator_Vasilevykh_M\Компилятор\bin\Debug\netcoreapp3.1\Компилятор.pdb
+C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilator_Vasilevykh_M\Компилятор\obj\Debug\netcoreapp3.1\Компилятор.csproj.AssemblyReference.cache
+C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilator_Vasilevykh_M\Компилятор\obj\Debug\netcoreapp3.1\Компилятор.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilator_Vasilevykh_M\Компилятор\obj\Debug\netcoreapp3.1\Компилятор.AssemblyInfoInputs.cache
+C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilator_Vasilevykh_M\Компилятор\obj\Debug\netcoreapp3.1\Компилятор.AssemblyInfo.cs
+C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilator_Vasilevykh_M\Компилятор\obj\Debug\netcoreapp3.1\Компилятор.csproj.CoreCompileInputs.cache
+C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilator_Vasilevykh_M\Компилятор\obj\Debug\netcoreapp3.1\Компилятор.dll
+C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilator_Vasilevykh_M\Компилятор\obj\Debug\netcoreapp3.1\Компилятор.pdb
+C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilator_Vasilevykh_M\Компилятор\obj\Debug\netcoreapp3.1\Компилятор.genruntimeconfig.cache

@@ -69,7 +69,7 @@ namespace Компилятор
 	class CEXPR
 	{
 		public CToken curToken;
-		public IO_leks leks = new IO_leks() { fl = new StreamReader("C:/Users/Михаил/Desktop/Компилятор/Компилятор/Компилятор/test2.txt") };
+		public IO_leks leks = new IO_leks() { fl = new StreamReader(@"C:\Users\Михаил\Desktop\Компилятор\Kompilertor\Kompilator_Vasilevykh_M\Компилятор\test2.txt") };
 		Dictionary<string, CType> Ctable_name = new Dictionary<string, CType>();// таблица имен
 
 		public CType DerivetTo(CType left, CType right)
@@ -100,6 +100,8 @@ namespace Компилятор
 				return;
 			if(left is CFloatType && (right is CIntType || right is CFloatType))
 				return;
+
+			leks.C_ERR.Add(new errors(7));
 			throw new Exception();
 		}
 
@@ -121,7 +123,8 @@ namespace Компилятор
 			}
 			catch
             {
-				GetNextToken();
+				if(leks.C_ERR[leks.C_ERR.Count-1].eror_code != 6 && leks.C_ERR[leks.C_ERR.Count-1].eror_code != 2)
+					GetNextToken();
 			}
 		}
 
@@ -156,19 +159,44 @@ namespace Компилятор
 			C_Block();
 
 			if (!C_Accept(OperSymbol.Spoint))
-				throw new Exception();
+				leks.C_ERR.Add(new errors(3));
 		}
 
 
-		void C_Block()
+		void C_Block() // <блок>::=<раздел констант><раздел переменных><оператор>
 		{
-			C_ConstArea();
-			C_VarArea();
-			C_Operator();
+			try
+			{
+				C_ConstArea();
+			}
+            catch
+            {
+				GetNextToken();
+            }
+
+
+			try
+			{
+				C_VarArea();
+			}
+			catch
+            {
+				GetNextToken();
+			}
+
+
+			try
+			{
+				C_Operator();
+			}
+			catch
+			{
+				GetNextToken();
+			}
 
 		}
 
-		void C_ConstArea()
+		void C_ConstArea() // <раздел констант>::=<пусто>|const <определение константы>;{<определение константы>;}
 		{
 			if (C_Accept(OperSymbol.Sconst))
 			{
@@ -193,7 +221,7 @@ namespace Компилятор
 			}
 		}
 
-		void C_ConstDeter()
+		void C_ConstDeter() // <определение константы>::=<имя>=<константа>
 		{
 			if (curToken.tt != TokenType.ttIdent)
 			{
@@ -207,7 +235,16 @@ namespace Компилятор
 			GetNextToken();
 			C_Const();
 		}
-		void C_Const()
+		void C_Const()  // <константа>::=<число без знака>|<знак><число без знака>|
+						//<имя константы>|<знак><имя константы>|<строка>
+						//<число без знака>::=<целое без знака>|<вещественное без знака>
+						//<целое без знака>::=<цифра>{<цифра>}
+						//<вещественное без знака>::=<целое без знака>.<цифра>{<цифра>}|< целое без знака>.<цифра>{<цифра>}E<порядок> |< целое без знака>E<порядок>
+						//<порядок>::=<целое без знака>|<знак><целое без знака>
+						//<знак>::=+|-
+						//<имя константы>::=<имя>
+						//<строка>::='<символ>{<символ>}'
+
 		{
 			if (C_Accept(OperSymbol.Ssubtraction))
 			{
@@ -234,7 +271,7 @@ namespace Компилятор
 			}
 		}
 
-		void C_VarArea()
+		void C_VarArea() //<раздел переменных>::= var <описание однотипных переменных>;{<описание однотипных переменных>;}|<пусто>
 		{
 			if (C_Accept(OperSymbol.Svar))
 			{
@@ -260,7 +297,7 @@ namespace Компилятор
 			}
 		}
 
-		void C_var()
+		void C_var() // <описание однотипных переменных>::=<имя>{,<имя>}:<тип>
 		{
 			if (curToken.tt != TokenType.ttIdent)
 				throw new Exception();
@@ -369,7 +406,11 @@ namespace Компилятор
 				GetNextToken();
 				CType right = C_SimpleExpression();
 				if (!left.isDerivedTo(right))
+				{
+					leks.C_ERR.Add(new errors(7));
 					throw new Exception();
+				}
+				return new CBoolType();
 			}
 			return left;
 
@@ -389,7 +430,10 @@ namespace Компилятор
 					CType right = C_Term();
 
 					if (!left.isDerivedTo(right))
+					{
+						leks.C_ERR.Add(new errors(7));
 						throw new Exception();
+					}
 					left = DerivetTo(left, right);
 				}
 				else
@@ -410,7 +454,10 @@ namespace Компилятор
 					GetNextToken();
 					CType right = C_Factor();
 					if(!left.isDerivedTo(right))
+					{
+						leks.C_ERR.Add(new errors(7));
 						throw new Exception();
+					}
 					left = DerivetTo(left, right);
 				}
 				else
@@ -507,6 +554,8 @@ namespace Компилятор
 					return new CBoolType();
                 }
 			}
+
+			return C_Excpression();
 			throw new Exception();
             //return C_Excpression();
         }

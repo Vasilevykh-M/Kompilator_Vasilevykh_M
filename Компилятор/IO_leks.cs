@@ -36,7 +36,9 @@ namespace Компилятор
 			{2, "строка без конца"},
 			{3, "нет обязательного спец слова"},
 			{4, "нет идентификатора"},
-			{5, "нет константы"}
+			{5, "нет константы"},
+			{6, "блок коментария не закрыт" },
+			{7,"Несоотвествие типов" }
 		};
     }
 
@@ -301,6 +303,21 @@ namespace Компилятор
 		public CToken CIO()
         {
 			buf = "";
+
+			if (leks == '{') /*нетрализация коментариев*/
+			{
+				while (leks != '}')
+				{
+					leks = (char)fl.Read();
+					i++;
+					if (leks == '\uffff')
+					{
+						break;
+					}
+				}
+				leks = (char)fl.Read();
+			}
+
 			while (leks == '\t' || leks == '\r' || leks == ' ' || leks == '\0' || leks == '\n')
 			{
 				if (leks == '\t')
@@ -314,8 +331,16 @@ namespace Компилятор
 					i++;
 				leks = (char)fl.Read();
 			}
+
+
+			if (leks == '\uffff')
+			{
+				C_ERR.Add(new errors(6));
+				throw new Exception("Error");
+			}
+
 			/*число*/
-			while(num(leks) || (word(leks) || leks == '.') && buf!="")
+			while (num(leks) || (word(leks) || leks == '.') && buf!="")
             {
 				buf += leks;
 				leks = (char)fl.Read();
@@ -352,10 +377,12 @@ namespace Компилятор
 					i++;
 					buf += leks;
 					leks = (char)fl.Read();
+					if (leks == '\uffff')
+						break;
 
 				} while (leks != '\"');
 
-				if (leks == '\0')
+				if (leks == '\uffff')
 				{
 					C_ERR.Add(new errors(2)); ;
 					throw new Exception("Error");
@@ -392,7 +419,7 @@ namespace Компилятор
 				return new C_OperToken(SpecToken[buf], TokenType.ttOperation);
 			}
 
-			/*	<=	или	<	*/
+			/*	<=	или	<	или	 <>	*/
 			if (leks == '<')
 			{
 				buf += leks;

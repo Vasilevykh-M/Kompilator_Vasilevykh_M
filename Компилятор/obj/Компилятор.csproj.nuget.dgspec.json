@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Михаил\\Desktop\\Компилятор\\Компилятор\\Компилятор\\Компилятор.csproj": {}
+    "C:\\Users\\Михаил\\Desktop\\Компилятор\\Kompilertor\\Kompilator_Vasilevykh_M\\Компилятор\\Компилятор.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Михаил\\Desktop\\Компилятор\\Компилятор\\Компилятор\\Компилятор.csproj": {
+    "C:\\Users\\Михаил\\Desktop\\Компилятор\\Kompilertor\\Kompilator_Vasilevykh_M\\Компилятор\\Компилятор.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Михаил\\Desktop\\Компилятор\\Компилятор\\Компилятор\\Компилятор.csproj",
+        "projectUniqueName": "C:\\Users\\Михаил\\Desktop\\Компилятор\\Kompilertor\\Kompilator_Vasilevykh_M\\Компилятор\\Компилятор.csproj",
         "projectName": "Компилятор",
-        "projectPath": "C:\\Users\\Михаил\\Desktop\\Компилятор\\Компилятор\\Компилятор\\Компилятор.csproj",
+        "projectPath": "C:\\Users\\Михаил\\Desktop\\Компилятор\\Kompilertor\\Kompilator_Vasilevykh_M\\Компилятор\\Компилятор.csproj",
         "packagesPath": "C:\\Users\\Михаил\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Михаил\\Desktop\\Компилятор\\Компилятор\\Компилятор\\obj\\",
+        "outputPath": "C:\\Users\\Михаил\\Desktop\\Компилятор\\Kompilertor\\Kompilator_Vasilevykh_M\\Компилятор\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

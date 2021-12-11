@@ -1,5 +1,7 @@
 program helo;
 	var A, B ,c: integer;
+	D: string;
 begin
 A:=2 + B;
+if A<>2 then A:=2+D;
 end.
