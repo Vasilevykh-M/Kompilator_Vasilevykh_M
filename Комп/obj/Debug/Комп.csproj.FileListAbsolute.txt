@@ -1,0 +1,7 @@
+C:\Users\Михаил\Desktop\Компилятор\Комп\Комп\bin\Debug\Комп.exe.config
+C:\Users\Михаил\Desktop\Компилятор\Комп\Комп\bin\Debug\Комп.exe
+C:\Users\Михаил\Desktop\Компилятор\Комп\Комп\bin\Debug\Комп.pdb
+C:\Users\Михаил\Desktop\Компилятор\Комп\Комп\obj\Debug\Комп.csproj.AssemblyReference.cache
+C:\Users\Михаил\Desktop\Компилятор\Комп\Комп\obj\Debug\Комп.csproj.CoreCompileInputs.cache
+C:\Users\Михаил\Desktop\Компилятор\Комп\Комп\obj\Debug\Комп.exe
+C:\Users\Михаил\Desktop\Компилятор\Комп\Комп\obj\Debug\Комп.pdb
